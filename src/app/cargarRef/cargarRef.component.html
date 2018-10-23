@@ -1,0 +1,293 @@
+
+
+        <br>
+        <div class="navigation col-lg-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    
+                    <ul class="nav navbar-nav">
+                            <div class="navbar-header">
+                                    <a [routerLink]="['/home']" class="navbar-brand">Huitz</a>
+                                </div>
+                        <li>
+                            <a [routerLink]="['/home']">
+                                <span class="glyphicon glyphicon-home"></span>
+                            Inicio</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/cargaRef']">
+                                <span class="glyphicon glyphicon-upload"></span>
+                            Subir Refaccion</a>
+                        </li>
+                   
+                    </ul>
+                       
+                </div>
+            </nav>   
+        </div>
+        <form>
+            <div class="form-row">
+                  
+              <div class="form-group col-md-12">
+                    <label for="inputEmail4">INGRESE LA INFORMACION DEL VEHICULO</label><BR>
+              
+            </div>
+
+            
+            <div class="form-group col-md-2">
+                <label >LINEA:</label>
+                <select [(ngModel)]="linea" name="linea" class="form-control">
+                            <option>----</option>
+                            <option>Frenos</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <label >GRUPO:</label>
+                            <select  [(ngModel)]="grupo" name="grupo" class="form-control">
+                                        <option>----</option>
+                                        <option>Hidraulico</option>
+                                        <option>Disco</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label >SUBGRUPO:</label>
+                                        <select  [(ngModel)]="subgrupo" name="subgrupo" class="form-control">
+                                                    <option>----</option>
+                                                    <option>BALATAS (pastilla)</option>
+                                                  </select>
+                                                </div>
+
+                                                
+                                    <div class="form-group col-md-2">
+                                        <label >MARCA:</label>
+                                        <select   [(ngModel)]="marca" name="marca" class="form-control">
+                                                    <option>----</option>
+                                                    <option>Raybestos</option>
+                                                  </select>
+                                                </div>
+
+                         
+                                            <div class="form-group col-md-2">
+                                                <label >MARCA DEL VEHICULO:</label>
+                                                <select   [(ngModel)]="marcaAut" name="marcaAut" class="form-control">
+                                                        <option>----</option>
+                                                        <option>Honda</option>
+                                                     </select>
+                                                </div>
+
+                                                
+                                            <div class="form-group col-md-2">
+                                                <label >SUBMARCA DEL VEHICULO:</label>
+                                                <select   [(ngModel)]="submarcaAut" name="submarcaAut" class="form-control">
+                                                        <option>----</option>
+                                                        <option>Odyssey</option>
+                                                     </select>
+                                                </div>
+
+                                                               
+                                            <div class="form-group col-md-2">
+                                                <label >Orientacion:</label>
+                                                <select   [(ngModel)]="orientacion" name="orientacion" class="form-control">
+                                                        <option>----</option>
+                                                        <option>Trasera</option>
+                                                        <option>Delantera</option>
+                                                     </select>
+                                                </div>
+                        
+            
+
+                        <div class="form-group col-md-1">
+                            <label  >DEL AÑO:</label>
+                                <select [(ngModel)]="anioInc" name="anioInc" class="form-control">
+                                        <option>----</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                        <option>2014</option>
+                                        <option>2013</option>
+                                        <option>2012</option>
+                                        <option>2011</option>
+                                        <option>2010</option>
+                                        <option>2009</option>
+                                        <option>2008</option>
+                                        <option>2007</option>
+                                        <option>2006</option>
+                                        <option>2005</option>
+                                        <option>2004</option>
+                                        <option>2003</option>
+                                        <option>2002</option>
+                                        <option>2001</option>
+                                        <option>2000</option>
+                                        <option>1999</option>
+                                        <option>1998</option>
+                                        <option>1997</option>
+                                        <option>1996</option>
+                                        <option>1995</option>
+                                        <option>1994</option>
+                                        <option>1993</option>
+                                        <option>1992</option>
+                                        <option>1991</option>
+                                        <option>1990</option>
+                                        <option>1989</option>
+                                        <option>1988</option>
+                                        <option>1987</option>
+                                        <option>1986</option>
+                                        <option>1985</option>
+                                        <option>1984</option>
+                                        <option>1983</option>
+                                        <option>1982</option>
+                                        <option>1981</option>
+                                        <option>1980</option>
+                                        <option>1979</option>
+                                        <option>1978</option>
+                                        <option>1977</option>
+                                        <option>1976</option>
+                                        <option>1975</option>
+                                        <option>1974</option>
+                                        <option>1973</option>
+                                        <option>1972</option>
+                                        <option>1971</option>
+                                        <option>1970</option>
+                                        <option>1969</option>
+                                        <option>1968</option>
+                                        <option>1967</option>
+                                        <option>1966</option>
+                                        <option>1965</option>
+                                        <option>1964</option>
+                                        <option>1963</option>
+                                        <option>1962</option>
+                                        <option>1961</option>
+                                        <option>1960</option>
+                                      </select>
+                                    </div>
+                                    
+                                
+
+                                    <div class="form-group col-md-1">
+                                        <label >AL AÑO:</label>
+                                            <select  [(ngModel)]="anioFin" name="anioFin" class="form-control">
+                                                    <option>----</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+                                                    <option>2009</option>
+                                                    <option>2008</option>
+                                                    <option>2007</option>
+                                                    <option>2006</option>
+                                                    <option>2005</option>
+                                                    <option>2004</option>
+                                                    <option>2003</option>
+                                                    <option>2002</option>
+                                                    <option>2001</option>
+                                                    <option>2000</option>
+                                                    <option>1999</option>
+                                                    <option>1998</option>
+                                                    <option>1997</option>
+                                                    <option>1996</option>
+                                                    <option>1995</option>
+                                                    <option>1994</option>
+                                                    <option>1993</option>
+                                                    <option>1992</option>
+                                                    <option>1991</option>
+                                                    <option>1990</option>
+                                                    <option>1989</option>
+                                                    <option>1988</option>
+                                                    <option>1987</option>
+                                                    <option>1986</option>
+                                                    <option>1985</option>
+                                                    <option>1984</option>
+                                                    <option>1983</option>
+                                                    <option>1982</option>
+                                                    <option>1981</option>
+                                                    <option>1980</option>
+                                                    <option>1979</option>
+                                                    <option>1978</option>
+                                                    <option>1977</option>
+                                                    <option>1976</option>
+                                                    <option>1975</option>
+                                                    <option>1974</option>
+                                                    <option>1973</option>
+                                                    <option>1972</option>
+                                                    <option>1971</option>
+                                                    <option>1970</option>
+                                                    <option>1969</option>
+                                                    <option>1968</option>
+                                                    <option>1967</option>
+                                                    <option>1966</option>
+                                                    <option>1965</option>
+                                                    <option>1964</option>
+                                                    <option>1963</option>
+                                                    <option>1962</option>
+                                                    <option>1961</option>
+                                                    <option>1960</option>
+                                                  </select>
+                                                </div>
+                                                
+                                            
+                                  
+                    <div class="form-group col-md-4">
+                        <label >OBSERVACIONES:</label>
+                        <input type="text" class="form-control"[(ngModel)]="observaciones" name="observaciones" placeholder="Ninguna">
+                      </div>
+
+                    
+
+<!--
+
+                            <div class="form-group col-md-2">
+                                    <label for="inputEmail4">Submarca:</label>
+                                    <select class="form-control">
+                                               
+                                              </select>
+                                            </div>
+
+-->
+                                            
+
+              <div class="form-group col-md-4">
+                <label>Numero de Parte:</label>
+                <input type="text" class="form-control"  [(ngModel)]="numParte" name="numParte" placeholder="Ingrese Numero de Parte">
+              </div>
+              <div class="form-group col-md-4">
+                <label >Codigo SAT :</label>
+                <input type="text" class="form-control"  [(ngModel)]="codSat" name="codSat" placeholder="Ingrese codigo SAT">
+              </div>
+              <div class="form-group col-md-4">
+                <label>Codigo:</label>
+                <input type="text" class="form-control"  [(ngModel)]="codigo" name="codigo" placeholder="Ingrese codigo">
+              </div>          
+              <div class="form-group col-md-6">
+                <div class="custom-file">
+                    <img *ngFor="let url of urls" accept="image/jpeg" [src]="url" class="rounded mb-3" width="30%">  
+                    <input type="file" [(ngModel)]="imagenes" name="imagenes" multiple (change)="detectFiles($event)">
+                    <label class="custom-file-label" for="customFile">Selecciona Imagenes</label>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="custom-file">
+                    <img *ngFor="let url of urls" accept="image/jpeg" [src]="url" class="rounded mb-3" width="30%">  
+                    <input type="file" id="customFile" multiple (change)="detectFiles($event)">
+                    <label class="custom-file-label" for="customFile">Selecciona Pdfs</label>
+                </div>
+              </div>
+          
+              <div class="form-group col-md-4">
+                <button type="submit" (click)="publicar()" class="btn btn-primary">Publicar</button>
+              </div>
+            </div>
+          
+          
+          </form>  
+          <br><br>
+        

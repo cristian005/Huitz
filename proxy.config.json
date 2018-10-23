@@ -1,0 +1,7 @@
+{
+    "/wbService/*": {
+        "target" : "http://localhost:8810/wb/rest",
+        "secure" : false,
+        "changeOrigin" : true
+    }
+}

@@ -1,0 +1,73 @@
+
+
+        <br>
+            <div class="navigation col-lg-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        
+                        <ul class="nav navbar-nav">
+                                <div class="navbar-header">
+                                        <a [routerLink]="['/cargaRef']" class="navbar-brand">Huitz</a>
+                                    </div>
+                            <li>
+                                <a [routerLink]="['/inicio']">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                Inicio</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cargaRef']">
+                                    <span class="glyphicon glyphicon-upload"></span>
+                                Subir Refaccion</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cargaRef']">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Modificar Refaccion</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cargaRef']">
+                                <span class="glyphicon glyphicon-edit"></span>
+                                Modificar Refaccion</a>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <input type="text"  [(ngModel)]="busca" name="busca" class="form-control" placeholder="Buscar Refaccion">
+                                    <div class="input-group-btn">
+                                      <button class="btn btn-default"  (click)="buscar()" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <br>
+                            </li>
+                        </ul>
+                           
+                    </div>
+                </nav>   
+            </div>
+            
+  
+                
+       <body>
+                  <table class="table table-dark table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">DESCRIPCION</th>
+                        <th scope="col">IMAGEN PRINCIPAL</th>
+                        <th scope="col">MARCA</th>
+                        <th colspan="2" scope="col">ACCION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let busqueda of listado">
+                        <th scope="row">{{busqueda.iRefaccion}}</th>
+                        <td>{{busqueda.cDescripcion}}</td> 
+                        <td><img src="data:image/jpg;base64,{{principal}}"  height="100px"></td> 
+                        <td><img src="data:image/jpg;base64,{{marca}}"  height="100px"></td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </body>
