@@ -1,6 +1,6 @@
 {
     "/wbService/*": {
-        "target" : "http://localhost:8810/wb/rest",
+        "target" : "http://200.38.80.228:8810/wb/rest",
         "secure" : false,
         "changeOrigin" : true
     }
